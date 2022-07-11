@@ -2,6 +2,9 @@
 
 *{
     color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,18 +12,14 @@ body{
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     h1{
-        font-size: 50px;
+        font-size: 60px;
         text-align: center;
         text-shadow: 2px 2px #FF0000;
         letter-spacing: .5rem;
-    }
+        margin-top: 4rem;    }
     .list{
-        max-width: 1300px;
-        margin: auto;
-        width: 100%;
         background-color: darkslategrey;
-        border-radius: 20px;
-        border: solid white 4px;
+        margin-top: 7rem;
 
         a{
             text-decoration: none;
@@ -30,13 +29,14 @@ body{
         .cards{
             padding: 4rem 0;
             display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
-            justify-content: center;
+            overflow-x: auto;
+            border-top: solid 4px white;
+            border-bottom: solid 4px white;
         }
     
         .card{
-            width: calc(100% / 4 - 4rem);
+            margin: 0 2rem;
+            width: 300px;
             text-align: center;
             border-radius: 10px;
             background-color: darkcyan;
@@ -44,9 +44,11 @@ body{
     
             .content{
                 padding: 1rem;
+                width: 300px;
 
                 h2{
                     text-shadow: 2px 2px black;
+                    margin-bottom: 1rem;
                 }
 
                 p{
@@ -54,6 +56,7 @@ body{
                     font-weight: bold;
                     font-size: small;
                     letter-spacing: .2rem;
+                    margin: 1rem 0;
 
                     .text{
                         text-transform: uppercase;

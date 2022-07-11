@@ -23,7 +23,7 @@
                             <hr> 
                             <p>Date: <div class="text">{{$movie->date}}</div></p>
                             <hr> 
-                            <b>Vote: {{$movie->vote}}</b>
+                            <p>Vote: <div class="text">{{$movie->vote}}</div></p>
                         </div>
                     </a>    
                 </div>
