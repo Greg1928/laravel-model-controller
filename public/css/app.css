@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);* {
+  color: white;
+}
+
+body {
+  background-color: lightseagreen;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+body h1 {
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px #FF0000;
+  letter-spacing: 0.5rem;
+}
+
+body .list {
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  background-color: darkslategrey;
+  border-radius: 20px;
+  border: solid white 4px;
+}
+
+body .list a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+body .list .cards {
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+body .list .card {
+  width: calc(25% - 4rem);
+  text-align: center;
+  border-radius: 10px;
+  background-color: darkcyan;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+body .list .card .content {
+  padding: 1rem;
+}
+
+body .list .card .content h2 {
+  text-shadow: 2px 2px black;
+}
+
+body .list .card .content p {
+  color: black;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 0.2rem;
+}
+
+body .list .card .content p .text {
+  text-transform: uppercase;
+}
+
+body .list .card .content b,
+body .list .card .content .text {
+  text-shadow: 2px 2px red;
+}
+

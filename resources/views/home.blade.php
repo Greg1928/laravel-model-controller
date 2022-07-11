@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>laravel-model-controller</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
     <h1>Movies</h1>
-    <ul>
-        @foreach ($movies as $movie)
-            <li>
-                <h3>Title: {{$movie->title}}</h3>
-                <p>Original Title: {{$movie->original_title}}</p>
-                <p>Country: {{$movie->nationality}}</p>
-                <p>Date: {{$movie->date}}</p>
-                <b>Vote: {{$movie->vote}}</b>
-            </li>
-            <hr>
-        @endforeach
-    </ul>
+    <div class="list">
+        <div class="cards">
+            @foreach ($movies as $movie)
+                <div class="card">
+                    <a href="#">
+                        <div class="content">
+                            <h2>{{$movie->title}}</h2>
+                            <hr>
+                            <p>Original Title: <div class="text">{{$movie->original_title}}</div></p>
+                            <hr>                    
+                            <p>Country: <div class="text">{{$movie->nationality}}</div></p>
+                            <hr> 
+                            <p>Date: <div class="text">{{$movie->date}}</div></p>
+                            <hr> 
+                            <b>Vote: {{$movie->vote}}</b>
+                        </div>
+                    </a>    
+                </div>
+            @endforeach
+        </div>
+    </div>
 </body>
 </html>
